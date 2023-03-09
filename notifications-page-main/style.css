@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    /* font-family: url(assets/fonts/static/PlusJakartaSans-Medium.ttf); */
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);   
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.align-start {
+    align-items: start;
+}
+
+p strong {
+    font-weight: 800;
+}
+
+.outter-container {
+    background-color: var(--Very-light-grayish-blue);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: var(--White);
+    width: min();
+}
+
+.mark-as-read {
+    padding: 1rem;
+}
+strong em {
+    font-style: normal;
+    color: var(--White);
+    padding: .25rem .64rem;
+    background-color: darkblue;
+    border-radius: 5px;
+}
+
+.notifications-box {
+    flex-direction: column;
+    align-items: start;
+    gap: .6rem;
+    padding: 1rem;
+}
+
+.notification {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.unread {
+    background-color: var(--Very-light-grayish-blue);
+}
+
+span.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-bottom: 3px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.content {
+    gap: 1rem;
+}
+
+.profile-picture {
+    outline: 1px solid blue;
+    width: 3rem;
+}
+
+.profile-picture img {
+    width: 100%;
+}
+
+.private-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--Grayish-blue);
+}
+
+.comment {
+    width: 100%;
+}
+
+.posted-picture {
+    width: 3rem;
+}

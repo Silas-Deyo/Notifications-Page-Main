@@ -8,117 +8,114 @@
   
   <title>Frontend Mentor | Notifications page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <div class="container">
-
-  </div>
-  <div class="mark-as-read">
-    <strong>
-      Notifications <em>3</em>
-    </strong>
-    <p class="mark">
-      Mark all as read
-    </p>
-  </div>
-  <div class="notifications-box">
-    <div class="notification unread">
-      <div class="content">
-        <div class="profile-picture"><img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber"></div>
-        <div class="message">
-          <p class="text">
-            <strong>Mark Webber</strong> reacted to your recent post <strong class="fade">My first tournament today!</strong> <span class="dot"></span>
-          </p>
-          <p class="time">1m ago</p>
-        </div>
+  <div class="outter-container">
+    <div class="container">
+      <div class="mark-as-read flex justify-space-between">
+        <strong>
+          Notifications <em>3</em>
+        </strong>
+        <p class="mark">
+          Mark all as read
+        </p>
       </div>
-    </div>
-    <div class="notification unread">
-      <div class="content">
-        <div class="profile-picture"><img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray"></div>
-        <div class="message">
-          <p class="text">
-            <strong>Angela Gray </strong>followed you<strong class="fade"></strong> <span class="dot"></span>
-          </p>
-          <p class="time">5m ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification unread">
-      <div class="content">
-        <div class="profile-picture"><img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson"></div>
-        <div class="message">
-          <p class="text">
-            <strong>Jacob Thompson</strong> has joined your group <strong class="fade">Chess Club</strong> <span class="dot"></span>
-          </p>
-          <p class="time">1 day ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification read">
-      <div class="content">
-        <div class="profile-picture"><img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin"></div>
-        <div class="message private">
-          <p class="text">
-            <strong>Rizky Hasanuddin</strong>sent you a private message<strong class="fade"></strong>
-          </p>
-          <p class="time">5 days ago</p>
-          <p class="private-message">
-            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="notification read">
-      <div class="content">
-        <div class="profile-picture"><img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith"></div>
-        <div class="comment">
-          <div class="message">
-            <p class="text">
-              <strong>Kimberly Smith</strong> commented on your picture<strong class="fade"></strong>
-            </p>
-            <p class="time">1 week ago</p>
+      <div class="notifications-box flex">
+        <div class="notification unread">
+          <div class="content flex justify-start align-start">
+            <div class="profile-picture"><img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber"></div>
+            <div class="message">
+              <p class="text">
+                <strong>Mark Webber</strong> reacted to your recent post <strong class="fade">My first tournament today!</strong> <span class="dot"></span>
+              </p>
+              <p class="time">1m ago</p>
+            </div>
           </div>
-          <img src="assets/images/image-chess.webp" alt="Picture" class="posted-picture">
+        </div>
+        <div class="notification unread">
+          <div class="content flex justify-start align-start">
+            <div class="profile-picture"><img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray"></div>
+            <div class="message">
+              <p class="text">
+                <strong>Angela Gray </strong>followed you<strong class="fade"></strong> <span class="dot"></span>
+              </p>
+              <p class="time">5m ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="notification unread">
+          <div class="content flex justify-start align-start">
+            <div class="profile-picture"><img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson"></div>
+            <div class="message">
+              <p class="text">
+                <strong>Jacob Thompson</strong> has joined your group <strong class="fade">Chess Club</strong> <span class="dot"></span>
+              </p>
+              <p class="time">1 day ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="notification read">
+          <div class="content flex justify-start align-start">
+            <div class="profile-picture"><img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin"></div>
+            <div class="message private">
+              <p class="text">
+                <strong>Rizky Hasanuddin</strong>sent you a private message<strong class="fade"></strong>
+              </p>
+              <p class="time">5 days ago</p>
+              <p class="private-message">
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="notification read">
+          <div class="content flex justify-start align-start">
+            <div class="profile-picture"><img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith"></div>
+            <div class="comment flex justify-space-between align-start">
+              <div class="message">
+                <p class="text">
+                  <strong>Kimberly Smith</strong> commented on your picture<strong class="fade"></strong>
+                </p>
+                <p class="time">1 week ago</p>
+              </div>
+              <img src="assets/images/image-chess.webp" alt="Picture" class="posted-picture">
+            </div>
+          </div>
+        </div>
+        <div class="notification read">
+          <div class="content flex justify-start align-start">
+            <div class="profile-picture"><img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson"></div>
+            <div class="message">
+              <p class="text">
+                <strong>Nathan Peterson</strong> reacted to your recent post <strong class="fade">5 end-game strategies to increase your win rate</strong>
+              </p>
+              <p class="time">2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="notification read">
+          <div class="content flex justify-start align-start">
+            <div class="profile-picture"><img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim"></div>
+            <div class="message">
+              <p class="text">
+                <strong>Anna Kim</strong> left the group <strong class="fade">Chess Club</strong>
+              </p>
+              <p class="time">2 weeks ago</p>
+            </div>
+          </div>
         </div>
       </div>
+  
     </div>
-    <div class="notification read">
-      <div class="content">
-        <div class="profile-picture"><img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson"></div>
-        <div class="message">
-          <p class="text">
-            <strong>Nathan Peterson</strong> reacted to your recent post <strong class="fade">5 end-game strategies to increase your win rate</strong>
-          </p>
-          <p class="time">2 weeks ago</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification read">
-      <div class="content">
-        <div class="profile-picture"><img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim"></div>
-        <div class="message">
-          <p class="text">
-            <strong>Anna Kim</strong> left the group <strong class="fade">Chess Club</strong>
-          </p>
-          <p class="time">2 weeks ago</p>
-        </div>
-      </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
     </div>
   </div>
 
-  
 
-  
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
