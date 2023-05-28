@@ -66,6 +66,11 @@ strong em {
     background-color: darkblue;
     border-radius: 5px;
 }
+.mark-as-read button.mark {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 
 .notifications-box {
     flex-direction: column;
